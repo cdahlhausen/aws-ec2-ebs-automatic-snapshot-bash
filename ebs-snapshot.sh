@@ -79,6 +79,15 @@ set -o pipefail
 
 # Configure AWS CLI by running this command: 
 #		aws configure
+#or
+#Create a .aws-config file in your $HOME path. eg /root/.aws-config
+#Copy the following credentials to the .aws-config file and enter you AWS access and secret key id in the required fields.
+#[default]
+#aws_access_key_id = <You aws Access key id>
+#aws_secret_access_key = <Your AWS secret key id>
+#region = <aws region , eg: ap-northeast-1,us-west-2 etc,,> 
+#Set AWS_CONFIG_FILE environment  variable using the following command. 
+#export AWS_CONFIG_FILE=$HOME/.aws-config
 
 # Access Key & Secret Access Key: enter in the credentials generated above for the new IAM user
 # Region Name: the region that this instance is currently in.
